@@ -1,8 +1,15 @@
-﻿@{
+﻿@model Persona
+
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4"> @Model.Nombre @ViewBag.Nombre (@Model.Edad)</h1>
+    <h2>Desarrolador full stack especializado en tecnologias .NET y Javascript</h2>
+
+    <img
+        id="foto"
+        src="./Imagenes/Lionel-Messi-Argentina-2022-FIFA-World-Cup_(cropped).jpg" alt="Foto Luis Bayro" />
 </div>
