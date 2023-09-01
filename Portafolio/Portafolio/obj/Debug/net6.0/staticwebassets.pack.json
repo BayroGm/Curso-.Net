@@ -9,6 +9,26 @@
       "PackagePath": "staticwebassets\\Imagenes\\Lionel-Messi-Argentina-2022-FIFA-World-Cup_(cropped).jpg"
     },
     {
+      "Id": "C:\\Users\\DELL DEV023\\Documents\\Github2\\Curso-.Net\\Portafolio\\Portafolio\\wwwroot\\Imagenes\\Microsoft_.NET_logo.png",
+      "PackagePath": "staticwebassets\\Imagenes\\Microsoft_.NET_logo.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL DEV023\\Documents\\Github2\\Curso-.Net\\Portafolio\\Portafolio\\wwwroot\\Imagenes\\amazon.PNG",
+      "PackagePath": "staticwebassets\\Imagenes\\amazon.PNG"
+    },
+    {
+      "Id": "C:\\Users\\DELL DEV023\\Documents\\Github2\\Curso-.Net\\Portafolio\\Portafolio\\wwwroot\\Imagenes\\dotnet-imagen-2.png",
+      "PackagePath": "staticwebassets\\Imagenes\\dotnet-imagen-2.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL DEV023\\Documents\\Github2\\Curso-.Net\\Portafolio\\Portafolio\\wwwroot\\Imagenes\\nyt.PNG",
+      "PackagePath": "staticwebassets\\Imagenes\\nyt.PNG"
+    },
+    {
+      "Id": "C:\\Users\\DELL DEV023\\Documents\\Github2\\Curso-.Net\\Portafolio\\Portafolio\\wwwroot\\Imagenes\\reddit.PNG",
+      "PackagePath": "staticwebassets\\Imagenes\\reddit.PNG"
+    },
+    {
       "Id": "C:\\Users\\DELL DEV023\\Documents\\Github2\\Curso-.Net\\Portafolio\\Portafolio\\wwwroot\\css\\custom.css",
       "PackagePath": "staticwebassets\\css\\custom.css"
     },
