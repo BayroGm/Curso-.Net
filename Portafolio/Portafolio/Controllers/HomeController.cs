@@ -9,10 +9,20 @@ namespace Portafolio.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IRepositorioProyectos repositiorioProyectos;
+        private readonly ServicioDelimitado servicioDelimitado;
+        private readonly ServicioUnico servicioUnico;
+        private readonly ServicioTransitorio servicioTransitorio;
 
-        public HomeController(ILogger<HomeController> logger , RepositorioProyectos repositiorioProyectos)
+
+
+        public HomeController(ILogger<HomeController> logger, IRepositorioProyectos repositiorioProyectos, ServicioDelimitado servicioDelimitado,
+            ServicioUnico servicioUnico,
+            ServicioTransitorio servicioTransitorio)
         {
             _logger = logger;
+            this.servicioDelimitado = servicioDelimitado;
+            this.servicioUnico = servicioUnico;
+            this.servicioTransitorio = servicioTransitorio;
             this.repositiorioProyectos = (IRepositorioProyectos)repositiorioProyectos;
         }
 
@@ -20,7 +30,17 @@ namespace Portafolio.Controllers
         {
             var repositorioProyectos = new RepositorioProyectos();
             var proyectos = repositorioProyectos.ObtenerProyectos().Take(3).ToList();
-            var modelo = new HomeIndexViewModel() { Proyectos = proyectos };
+            var guidViewModel = new EjemploGUIDViewModel()
+            {
+                Delimitado = servicioDelimitado.ObtenerGuid,
+                Transitorio = servicioTransitorio.ObtenerGuid,
+                Unico = servicioUnico.ObtenerGuid,
+
+            };
+
+            var modelo = new HomeIndexViewModel() { 
+                Proyectos = proyectos,
+            EjemploGUID_1 = guidViewModel};
             return View(modelo);
         }
 

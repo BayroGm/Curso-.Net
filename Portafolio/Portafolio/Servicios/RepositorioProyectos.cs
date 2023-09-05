@@ -9,7 +9,7 @@ namespace Portafolio.Servicios
     }
 
 
-    public class RepositorioProyectos
+    public class RepositorioProyectos : IRepositorioProyectos
     {
         public List<Proyecto> ObtenerProyectos()
         {
